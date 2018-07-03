@@ -38,6 +38,7 @@ from keras import backend as K
 K.set_image_dim_ordering('tf')      #('th')
 ```
 Change the 'tf' to 'th' to use the Theano backend.
+The rest of the code is structured to handle both the types of backends.
 
 ## Requirements
 * Python 3.5 or above
@@ -79,4 +80,5 @@ You can use the fredtest_data dataset provided with the code.
 
 ![pro_res3](https://user-images.githubusercontent.com/28685502/42220763-97592c46-7eed-11e8-913f-97d6840e8118.png)
 
-The model performs pretty well considering we are not using any GPU's in this project. Although using GPU's would yield a much better result. Also keep in mind that while testing the model with live feed, setup an ideal environment with good lighting and a proper webcam.
+The model performs pretty well considering we are not using any GPU's in this project. Although using GPU's would yield a much better result. The erratic behaviour of the loss and accuracy graphs is due to loss of features pertaining to no presence of GPU's. 
+Also keep in mind that while testing the model with live feed, setup an ideal environment with good lighting and a proper webcam.
