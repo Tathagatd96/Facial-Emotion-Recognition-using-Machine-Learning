@@ -32,6 +32,13 @@ We are using the Cohn-Kanade dataset available here http://www.consortium.ri.cmu
 
 This is done so as to increase the number of samples for training our model.The total size of our dataset is 2536 samples.
 
+The model is based on the Keras library on a Tensorflow Backend. But, if Tensorflow is not available, Theano can be used instead by changing just one line in the code:
+```python
+from keras import backend as K
+K.set_image_dim_ordering('tf')      #('th')
+```
+Change the 'tf' to 'th' to use the Theano backend.
+
 ## Requirements
 * Python 3.5 or above
 * Tensorflow 1.6
