@@ -52,9 +52,24 @@ To test the model make sure your webcam is working or attach an external webcam 
 ```python
 python facialmore.py
 ```
+To test the model on static images run:
+```
+python fredtest.py
+```
+You can use the fredtest_data dataset provided with the code.
 
 ## Results
 * Threshold Accuracy: 86.98%
 * Test Loss: 1.868 Validation Loss: 0.973
 * Test Accuracy:0.705 Validation Accuracy:0.721
 * Confusion Matrix
+
+![pro_res1](https://user-images.githubusercontent.com/28685502/42220761-96e9ec64-7eed-11e8-83ce-1fd3d17b6a97.png)
+
+
+![pro_res2](https://user-images.githubusercontent.com/28685502/42220762-971c5be0-7eed-11e8-8cc9-d8d335fdcfd5.png)
+
+
+![pro_res3](https://user-images.githubusercontent.com/28685502/42220763-97592c46-7eed-11e8-913f-97d6840e8118.png)
+
+The model performs pretty well considering we are not using any GPU's in this project. Although using GPU's would yield a much better result. Also keep in mind that while testing the model with live feed, setup an ideal environment with good lighting and a proper webcam.
