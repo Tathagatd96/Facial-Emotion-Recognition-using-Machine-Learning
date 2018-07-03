@@ -26,3 +26,35 @@ using Deep Neural Networks.
 
 ### Dataset
 We are using the Cohn-Kanade dataset available here http://www.consortium.ri.cmu.edu/ckagree/. The dataset we used for training our model is an augmented version of the CK+ dataset.
+
+![38](https://user-images.githubusercontent.com/28685502/42219980-46dd4b50-7eeb-11e8-9941-150872bf49db.jpg)
+![aug_0_927](https://user-images.githubusercontent.com/28685502/42219981-47181fdc-7eeb-11e8-8cf2-d8646cbb3cf6.jpeg)
+
+This is done so as to increase the number of samples for training our model.The total size of our dataset is 2536 samples.
+
+## Requirements
+* Python 3.5 or above
+* Tensorflow 1.6
+* Keras 2.1.0
+* OpenCV
+* scikit-learn
+* Numpy
+* Matplotlib
+* itertools
+
+## Training the model
+Install the required libraries and run this file. Training takes a while to complete, but it can be sped up by using GPU options.
+```python
+python fred_train.py
+```
+## Running Test
+To test the model make sure your webcam is working or attach an external webcam is online. 
+```python
+python facialmore.py
+```
+
+## Results
+* Threshold Accuracy: 86.98%
+* Test Loss: 1.868 Validation Loss: 0.973
+* Test Accuracy:0.705 Validation Accuracy:0.721
+* Confusion Matrix
